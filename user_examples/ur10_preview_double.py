@@ -48,9 +48,6 @@ class Extension_Double(omni.ext.IExt):
         self._first_step2 = True
 
         self._is_playing = False
-        self.hobe_flag = 1234
-        self._mp = _motion_planning.acquire_motion_planning_interface()
-        self._dc = _dynamic_control.acquire_dynamic_control_interface()
 
         self._mp = _motion_planning.acquire_motion_planning_interface()
         self._dc = _dynamic_control.acquire_dynamic_control_interface()
@@ -74,7 +71,6 @@ class Extension_Double(omni.ext.IExt):
         self._create_UR10_v3_btn = None
         self._create_UR10_v4_btn = None
         self._create_UR10_v5_btn = None
-
 
         self.action_result = False
         self._ros_service_btn = None
