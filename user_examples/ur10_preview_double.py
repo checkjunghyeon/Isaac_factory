@@ -30,7 +30,7 @@ from collections import deque
 
 import asyncio
 
-EXTENSION_NAME = "BAE Demo Controller"
+EXTENSION_NAME = "Demo Controller"
 
 
 class Extension_Double(omni.ext.IExt):
@@ -95,10 +95,10 @@ class Extension_Double(omni.ext.IExt):
 
         self._menu_items = [
             MenuItemDescription(
-                name="BAE Demo",
+                name="Demo",
                 sub_menu=[
                     MenuItemDescription(
-                        name="BAE Demo", onclick_fn=lambda a=weakref.proxy(self): a._menu_callback()
+                        name="Demo", onclick_fn=lambda a=weakref.proxy(self): a._menu_callback()
                     )
                 ],
             )
